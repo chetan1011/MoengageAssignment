@@ -10,8 +10,4 @@ interface NewsAPI {
     @GET("news-api-feed/staticResponse.json")
     suspend fun getNewsList(): Response<NewsListResponse>
 
-//    @GET("https://quotable.io/quotes")
-//    suspend fun getQuotes(@Query("page") pageNo: Int): Response<QuoteList>
-
-
 }

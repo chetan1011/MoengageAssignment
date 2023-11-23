@@ -4,10 +4,8 @@ import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.chetan.moengageassignment.api.NewsAPI
 import com.chetan.moengageassignment.models.NewsListResponse
-import com.chetan.moengageassignment.models.NewsResponse
 import com.chetan.moengageassignment.utils.NetworkResult
 import org.json.JSONObject
-import retrofit2.Response
 import javax.inject.Inject
 
 class NewsRepository @Inject constructor(private val newsAPI: NewsAPI) {
