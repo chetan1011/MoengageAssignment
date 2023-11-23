@@ -40,7 +40,7 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun providesNoteAPI(retrofitBuilder: Retrofit.Builder, okHttpClient: OkHttpClient): NewsAPI {
+    fun providesNewsAPI(retrofitBuilder: Retrofit.Builder, okHttpClient: OkHttpClient): NewsAPI {
         return retrofitBuilder.client(okHttpClient).build().create(NewsAPI::class.java)
     }
 
